@@ -1,0 +1,125 @@
+.day-planner-page {
+    padding-bottom: 5rem;
+}
+
+.planner-header {
+    margin-bottom: 2rem;
+}
+
+.day-selector {
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.day-tab {
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    background: white;
+    white-space: nowrap;
+    font-weight: 600;
+    border: 1px solid var(--border-color);
+    transition: all 0.2s;
+}
+
+.day-tab.active {
+    background: var(--primary-blue);
+    color: white;
+    border-color: var(--primary-blue);
+}
+
+.timeline-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 100px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 110px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--border-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timeline-item .time {
+    position: absolute;
+    left: -80px;
+    top: 15px;
+    font-weight: 700;
+    color: var(--primary-blue);
+}
+
+.timeline-item .dot {
+    position: absolute;
+    left: 6px;
+    top: 20px;
+    width: 14px;
+    height: 14px;
+    background: var(--primary-blue);
+    border-radius: 50%;
+    border: 4px solid white;
+    z-index: 2;
+}
+
+.act-card {
+    padding: 1.5rem;
+}
+
+.act-card h3 {
+    margin-bottom: 0.25rem;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.delete-btn {
+    color: #ef4444;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background 0.2s;
+}
+
+.delete-btn:hover {
+    background: rgba(239, 68, 68, 0.1);
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+}
+
+.modal-content {
+    width: 100%;
+    max-width: 500px;
+    padding: 2.5rem;
+    border-radius: var(--radius-lg);
+}
+
+.modal-content h2 {
+    margin-bottom: 2rem;
+}
+
+.flex-1 {
+    flex: 1;
+}

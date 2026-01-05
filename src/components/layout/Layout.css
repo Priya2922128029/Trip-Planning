@@ -1,0 +1,35 @@
+.app-layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    margin-top: 70px;
+}
+
+.page-content {
+    flex: 1;
+    padding: 2rem;
+    transition: padding 0.3s ease;
+}
+
+.page-content.with-sidebar {
+    margin-left: 260px;
+}
+
+@media (max-width: 900px) {
+    .page-content.with-sidebar {
+        margin-left: 70px;
+    }
+}
+
+@media (max-width: 600px) {
+    .page-content.with-sidebar {
+        margin-left: 0;
+        margin-bottom: 60px;
+        padding: 1rem;
+    }
+}

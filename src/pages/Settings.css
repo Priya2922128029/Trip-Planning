@@ -1,0 +1,57 @@
+.settings-page {
+    padding-top: 3rem;
+    max-width: 800px;
+}
+
+.settings-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.setting-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(37, 99, 235, 0.1);
+    color: var(--primary-blue);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.toggle-switch {
+    width: 50px;
+    height: 26px;
+    background: var(--border-color);
+    border-radius: 13px;
+    position: relative;
+    transition: background 0.3s;
+}
+
+.toggle-switch.on {
+    background: var(--primary-blue);
+}
+
+.switch-knob {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    transition: transform 0.3s;
+}
+
+.toggle-switch.on .switch-knob {
+    transform: translateX(24px);
+}
+
+.settings-select {
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    background: white;
+    color: var(--text-dark);
+}

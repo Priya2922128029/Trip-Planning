@@ -1,0 +1,47 @@
+.summary-grid {
+    grid-template-columns: 1fr 400px;
+    gap: 2rem;
+}
+
+.label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.value {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 0.25rem;
+}
+
+.summary-act {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.summary-act:last-child {
+    border-bottom: none;
+}
+
+.view-more {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.stat h3 {
+    font-size: 1.1rem;
+}
+
+.bg-teal {
+    background-color: var(--primary-teal) !important;
+}
+
+@media (max-width: 900px) {
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+}
